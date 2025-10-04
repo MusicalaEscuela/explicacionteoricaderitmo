@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ritmo · Musicala</title>
+  <meta name="description" content="Qué es el ritmo, para qué sirve, figuras rítmicas base y métricas sencillas, con ejercicios prácticos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Musicala inicio">
+      <img src="logo.png" alt="Musicala" class="logo">
+    </a>
+    <nav class="nav">
+      <a href="#que-es">¿Qué es?</a>
+      <a href="#para-que">¿Para qué sirve?</a>
+      <a href="#como-lo-pensamos">Cómo lo pensamos</a>
+      <a href="#figuras">Figuras</a>
+      <a href="#metrica">Métricas</a>
+      <a href="#errores">Errores</a>
+      <a href="#glosario">Glosario</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero con audio de inicio -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 class="title">Ritmo</h1>
+        <p class="subtitle">Pilar de la música: el orden del tiempo, el pulso que nos mueve y la estructura que sostiene lo que escuchamos y tocamos.</p>
+        <div class="cta-row">
+          <button id="btnPlayIntro" class="btn primary" aria-label="Reproducir audio de bienvenida">▶ Escuchar intro</button>
+          <span class="hint">Haz clic para activar el audio</span>
+        </div>
+        <audio id="introAudio" src="intro.mp3" preload="auto"></audio>
+      </div>
+      <figure class="hero-media">
+        <img src="ritmo.png" alt="Ilustración rítmica con metrónomo, ondas y notas" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ¿Qué es el ritmo? -->
+  <section id="que-es" class="section">
+    <div class="wrap">
+      <h2>¿Qué es el ritmo?</h2>
+      <p>
+        El ritmo es la <strong>organización del tiempo</strong> en la música: cómo se distribuyen <em>sonidos y silencios</em> en relación con un <strong>pulso</strong> (latido constante). 
+        Si la melodía es “lo que cantamos”, el ritmo es <em>cuándo</em> suena cada cosa y cuánto dura.
+      </p>
+      <p>
+        Ideas clave sin enredo: <br>
+        • <strong>Pulso</strong>: latido constante (como caminar). <br>
+        • <strong>Tempo</strong>: velocidad del pulso (BPM). <br>
+        • <strong>Ritmo</strong>: combinación de duraciones (patrones sobre el pulso). <br>
+        • <strong>Métrica/compás</strong>: cómo agrupamos los pulsos (2, 3, 4, etc.) y dónde cae el acento principal.
+      </p>
+
+      <details>
+        <summary><strong>Prúebalo ya (30 seg)</strong></summary>
+        <p>
+          Pon el metrónomo abajo en 80 BPM, da <em>un aplauso por cada pulso</em> durante 8 golpes. Luego intenta <strong>dos palmadas rápidas</strong> por cada pulso 
+          (subdivisión en corcheas). Sentiste cómo el tiempo es el mismo pero la <em>distribución</em> cambió? Eso es ritmo.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ¿Para qué sirve? -->
+  <section id="para-que" class="section alt">
+    <div class="wrap cards-3">
+      <article class="card">
+        <h3>Coordinar</h3>
+        <p>Sincroniza a músicos y bailarines con un <em>pulso común</em>. Evita que cada quien vaya “por su lado”.</p>
+        <p><strong>Ejercicio:</strong> cuenta 1-2-3-4 en voz baja mientras tocas o caminas; no pierdas el 1.</p>
+      </article>
+      <article class="card">
+        <h3>Expresar</h3>
+        <p>Acentos, silencios y duraciones generan <strong>tensión y reposo</strong>. Cambiar un silencio puede cambiar toda la emoción.</p>
+        <p><strong>Tip:</strong> deja un silencio intencional antes de una frase importante.</p>
+      </article>
+      <article class="card">
+        <h3>Dar estructura</h3>
+        <p>El ritmo ordena secciones (intro, verso, coro) y define estilos (marcha 2/4, vals 3/4, pop/rock 4/4...).</p>
+        <p><strong>Aplica:</strong> marca los “1” de cada compás con el pie y notarás cómo se ordena la música.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Cómo lo pensamos en Musicala -->
+  <section id="como-lo-pensamos" class="section">
+    <div class="wrap list">
+      <h2>Cómo lo pensamos en Musicala</h2>
+      <ul>
+        <li><strong>Del cuerpo al instrumento:</strong> caminar, aplaudir, decir <em>“TA”</em> antes de tocar.</li>
+        <li><strong>De pulso a patrones:</strong> primero sentir el latido, luego jugar con duraciones simples.</li>
+        <li><strong>Silencios con intención:</strong> el silencio también dice; úsalo como <em>respiro</em>.</li>
+        <li><strong>Juego + repetición consciente:</strong> variaciones pequeñas mejoran más que repetir en automático.</li>
+        <li><strong>Capas:</strong> ostinato sencillo abajo (negras), melodía arriba (blancas/corcheas).</li>
+      </ul>
+
+      <details>
+        <summary><strong>Mini-guía de práctica (5 min)</strong></summary>
+        <ol>
+          <li>1 min: pulso con pasos o pie (sin instrumento).</li>
+          <li>2 min: aplaude negras, luego corcheas (dos por pulso).</li>
+          <li>2 min: toca un patrón simple (N-N-B-B o C-C-C-C-N) sin perder el pie en el 1.</li>
+        </ol>
+      </details>
+    </div>
+  </section>
+
+  <!-- Figuras rítmicas -->
+  <section id="figuras" class="section alt">
+    <div class="wrap">
+      <h2>Figuras rítmicas (base)</h2>
+      <p>Usaremos cuatro duraciones clave: <strong>redonda</strong>, <strong>blanca</strong>, <strong>negra</strong> y <strong>corchea</strong>. Las duraciones son relativas al compás de referencia (aquí 4/4).</p>
+
+      <div class="figuras-grid">
+        <!-- Redonda -->
+        <article class="fig-card">
+          <div class="fig-svg">
+            <svg viewBox="0 0 120 60" aria-hidden="true">
+              <ellipse cx="60" cy="30" rx="28" ry="18" fill="none" stroke="currentColor" stroke-width="6"/>
+            </svg>
+          </div>
+          <h3>Redonda</h3>
+          <p><strong>Ocupa 4 pulsos</strong>. Sensación de sostén y espacio. Útil para finales o notas largas.</p>
+          <div class="pill">Duración: 4 negras</div>
+          <details>
+            <summary>Cómo practicar</summary>
+            <p>En 4/4 a 72-80 BPM, suena la nota al “1” y <em>sostén</em> hasta el “1” siguiente sin apurar aire/ataque. 
+            Observa si tu pie cae <em>exacto</em> cada pulso.</p>
+          </details>
+        </article>
+
+        <!-- Blanca -->
+        <article class="fig-card">
+          <div class="fig-svg">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <ellipse cx="40" cy="90" rx="18" ry="12" fill="none" stroke="currentColor" stroke-width="5"/>
+              <line x1="50" y1="86" x2="50" y2="20" stroke="currentColor" stroke-width="5"/>
+            </svg>
+          </div>
+          <h3>Blanca</h3>
+          <p><strong>2 pulsos</strong>. Mantiene la línea cantable sin perder energía.</p>
+          <div class="pill">Duración: 2 negras</div>
+          <details>
+            <summary>Cómo practicar</summary>
+            <p>Cuenta “1-2 | 3-4” y toca en los 1 y 3. Luego cambia a “1-- | 3--” (sostén parejo, respiración estable).</p>
+          </details>
+        </article>
+
+        <!-- Negra -->
+        <article class="fig-card">
+          <div class="fig-svg">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <ellipse cx="40" cy="90" rx="18" ry="12" fill="currentColor"/>
+              <line x1="50" y1="86" x2="50" y2="20" stroke="currentColor" stroke-width="5"/>
+            </svg>
+          </div>
+          <h3>Negra</h3>
+          <p><strong>1 pulso</strong>. Es el paso básico, el “caminar”. Ideal para estabilizar el groove.</p>
+          <div class="pill">Duración: 1</div>
+          <details>
+            <summary>Cómo practicar</summary>
+            <p>Negras constantes a 80 BPM: 8 golpes iguales. Luego acentúa solo los “1” (cada 4). No aceleres la 3-4.</p>
+          </details>
+        </article>
+
+        <!-- Corchea -->
+        <article class="fig-card">
+          <div class="fig-svg">
+            <svg viewBox="0 0 140 140" aria-hidden="true">
+              <ellipse cx="50" cy="110" rx="18" ry="12" fill="currentColor"/>
+              <line x1="60" y1="106" x2="60" y2="20" stroke="currentColor" stroke-width="5"/>
+              <path d="M60 20 C 90 20, 95 40, 110 46" fill="none" stroke="currentColor" stroke-width="5"/>
+            </svg>
+          </div>
+          <h3>Corchea</h3>
+          <p><strong>½ pulso</strong>. Subdivide el tiempo: “ti-ti”. Da agilidad y detalle rítmico.</p>
+          <div class="pill">Duración: 1/2</div>
+          <details>
+            <summary>Cómo practicar</summary>
+            <p>Di “ti-ti” dos veces por pulso con el metrónomo. En instrumento, mantén volumen parejo en ambas corcheas.</p>
+          </details>
+        </article>
+      </div>
+
+      <div class="note">
+        * Recuerda que existen <em>silencios</em> equivalentes a estas figuras. Úsalos como herramienta expresiva, no como “huecos”.
+      </div>
+    </div>
+  </section>
+
+  <!-- Métricas básicas -->
+  <section id="metrica" class="section">
+    <div class="wrap">
+      <h2>Métricas (muy rápido)</h2>
+      <p>
+        La métrica dice <strong>en cuántos pulsos agrupamos</strong> y dónde cae el acento principal. 
+        Lo típico: 2/4 (marcha), 3/4 (vals), 4/4 (pop/rock). En todos, el <strong>1</strong> es la referencia.
+      </p>
+
+      <div class="tool">
+        <label for="meterSel"><strong>Compás</strong></label>
+        <select id="meterSel" class="input">
+          <option value="2">2/4 (TA ta)</option>
+          <option value="3">3/4 (TA ta ta)</option>
+          <option value="4" selected>4/4 (TA ta ta ta)</option>
+        </select>
+
+        <label for="bpm"><strong>Tempo</strong> (<span id="bpmVal">80</span> BPM)</label>
+        <input id="bpm" type="range" min="40" max="160" value="80" step="1" />
+      </div>
+
+      <div class="accent-row" id="accentRow" aria-live="polite"></div>
+
+      <div class="controls" style="margin-top:10px">
+        <button id="btnStart" class="btn primary">▶ Iniciar</button>
+        <button id="btnStop" class="btn ghost">⏹ Detener</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Errores comunes -->
+  <section id="errores" class="section">
+    <div class="wrap">
+      <h2>Errores comunes y cómo corregirlos</h2>
+      <ul>
+        <li><strong>Perder el 1:</strong> marca el pie solo en el 1. <em>Solución:</em> di “UNO” en voz baja cada compás.</li>
+        <li><strong>Acelerar en partes difíciles:</strong> tensión en hombros. <em>Solución:</em> baja 10 BPM y respira antes del pasaje.</li>
+        <li><strong>Acentuar fuera de lugar:</strong> golpear más fuerte el 2 ó 3 en 3/4. <em>Solución:</em> exagera el acento del 1 por 8 compases y vuelve a neutro.</li>
+        <li><strong>Subir BPM muy rápido:</strong> pierdes precisión. <em>Solución:</em> regla 10-10-10: +10 BPM solo si tocas 10 compases limpios 10/10 veces.</li>
+        <li><strong>Desbalance en corcheas:</strong> la segunda cae más débil o tarde. <em>Solución:</em> di “ti-TI” para igualarlas y luego vuelve a “ti-ti”.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Glosario exprés -->
+  <section id="glosario" class="section alt">
+    <div class="wrap">
+      <h2>Glosario exprés</h2>
+      <ul>
+        <li><strong>Pulso:</strong> latido constante (lo que marca el metrónomo).</li>
+        <li><strong>Tempo (BPM):</strong> cuántos pulsos por minuto.</li>
+        <li><strong>Acento:</strong> golpe más fuerte, generalmente el “1”.</li>
+        <li><strong>Compás/Métrica:</strong> agrupación de pulsos (2, 3, 4…).</li>
+        <li><strong>Subdivisión:</strong> dividir el pulso (corcheas = 2 por pulso).</li>
+        <li><strong>Patrón rítmico:</strong> combinación repetible de duraciones.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <small>© Musicala — Vida, alma y música.</small>
+      <small>Guías visuales, colores y tipografías según manual de identidad.</small>
+    </div>
+  </footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

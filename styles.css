@@ -1,0 +1,130 @@
+/* Paleta y tipografía Musicala */
+:root{
+  --mozart:#0C41C4;   /* Azul Mozart */
+  --beethoven:#680DBF;/* Violeta Beethoven */
+  --brahms:#CE0071;   /* Magenta Brahms */
+  --debussy:#F9F9F9;  /* Blanco Debussy */
+  --wagner:#0C0A1E;
+  --ink:#232323;
+  --radius:18px;
+  --shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--debussy);
+  line-height:1.5;
+}
+
+/* Header */
+.site-header{
+  background: linear-gradient(90deg, var(--mozart), var(--beethoven));
+  color: #fff;
+  position: sticky; top:0; z-index: 10;
+}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:18px}
+.site-header .wrap{display:flex;align-items:center;gap:24px;justify-content:space-between}
+.logo{height:38px}
+.nav a{
+  color:#fff;text-decoration:none;margin-left:16px;font-weight:700;
+  opacity:.95
+}
+.nav a:hover{opacity:1;text-decoration:underline}
+
+/* Hero */
+.hero{
+  background:
+    radial-gradient(1200px 420px at 10% -10%, rgba(206,0,113,.25), transparent 60%),
+    linear-gradient(180deg, #fff, var(--debussy));
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.hero-grid{
+  display:grid;grid-template-columns: 1.2fr 1fr;gap:28px;align-items:center;min-height:60svh
+}
+.title{
+  font-size: clamp(38px, 4.8vw, 64px);
+  margin: 8px 0 10px;
+  font-weight: 900;
+  background: linear-gradient(90deg, var(--mozart), var(--beethoven));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.subtitle{font-size: clamp(16px, 2.1vw, 20px);opacity:.85;margin:0 0 16px}
+.cta-row{display:flex;align-items:center;gap:12px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 16px;border-radius:999px;border:2px solid transparent;
+  font-weight:800;cursor:pointer;box-shadow:var(--shadow);background:#fff
+}
+.btn.primary{background:#fff;border-color:var(--mozart);color:var(--mozart)}
+.btn.primary:hover{background:var(--mozart);color:#fff}
+.btn.ghost{background:transparent;border-color:rgba(0,0,0,.15);color:#333}
+.hint{font-size:14px;opacity:.7}
+.hero-media img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* Secciones */
+.section{padding: 48px 0}
+.section.alt{background:#fff}
+h2{font-size: clamp(22px, 3vw, 32px);margin:0 0 12px}
+h3{margin:6px 0 6px}
+
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{
+  background:#fff;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)
+}
+.card p{margin:8px 0 0}
+
+/* Figuras */
+.figuras-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:14px
+}
+.fig-card{
+  background:#fff;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;align-items:center;text-align:center
+}
+.fig-svg{
+  width:120px;height:120px;color:var(--beethoven);display:grid;place-items:center;margin-bottom:8px
+}
+.pill{
+  margin-top:auto;background:rgba(12,65,196,.08);color:var(--mozart);
+  border:1px solid rgba(12,65,196,.25);padding:6px 10px;border-radius:999px;font-weight:700
+}
+.note{margin-top:10px;font-size:14px;opacity:.8}
+
+/* Métrica + Herramientas */
+.tool{
+  background:#fff;border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);
+  display:grid;gap:10px;grid-template-columns:1fr 1fr;align-items:center;margin-top:8px
+}
+.input{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(0,0,0,.15)}
+.accent-row{display:flex;gap:8px;margin:12px 0 2px;flex-wrap:wrap}
+.accent{
+  padding:8px 12px;border-radius:999px;border:2px solid rgba(0,0,0,.1);
+  background:#fff;font-weight:900;min-width:44px;text-align:center
+}
+.accent.main{border-color:var(--brahms);color:#fff;background:var(--brahms)}
+
+/* Práctica */
+.steps{margin:0 0 14px;padding-left:18px}
+.pattern{display:flex;gap:10px;align-items:center}
+.pattern .input{max-width:260px}
+
+/* Footer */
+.site-footer{
+  background: linear-gradient(90deg, var(--beethoven), var(--mozart));
+  color:#fff
+}
+.footer-grid{display:flex;justify-content:space-between;align-items:center}
+
+/* Util */
+.list ul{margin:0;padding-left:18px}
+
+/* Responsive */
+@media (max-width: 920px){
+  .hero-grid{grid-template-columns:1fr}
+  .cards-3{grid-template-columns:1fr}
+  .figuras-grid{grid-template-columns:repeat(2,1fr)}
+  .tool{grid-template-columns:1fr}
+}
